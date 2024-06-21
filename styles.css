@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Flat&family=Nova+Round&family=Nova+Script&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    position: relative;
+    background-color: #0A0A00;
+   font-size: 100%;
+}
+.imagem-fundo-1{
+    position: absolute;
+    width: 1200px;
+    height: 990px;
+    left: -275px;
+    top: -283px;
+    z-index: -1;
+}
+.imagem-fundo-2{
+    position: absolute;
+    width: 990px;
+    height: 585px;
+    left: 350px;
+    top: 1170px;
+    z-index: -1;
+}
+
+.imagem-fundo-3{
+position: absolute;
+display: flex;
+justify-content: center;
+width: 1200px;
+height: 800px;
+left: 80px;
+top: 1850px;
+z-index: -1;
+}
+
+.menu-toggle{
+    display: none;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0px;
+    gap: 10px;
+
+}
+.logo-texto{
+    display: flex;
+    justify-content: center;
+    width: 140px;
+    height: 80px;
+
+}
+
+.logo-imagem{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecalho-menu-lista{
+    display: flex;
+    flex-direction: row;
+    background: #FFFFFF;
+    border-radius: 8px;
+    gap: 20px;
+    width: 600px;
+    height: 38px;
+    align-items: center;
+    justify-content:center;
+
+}
+.cabecalho-menu-item{
+    font-family: 'Nova Round', system-ui;
+    color: #0A0A00;
+    gap: 36px;
+    
+}
+.botao-assinar-header{
+    font-family: 'Open Sans', system-ui;
+    font-style: normal;
+    background-color: #FFFF00;
+    border-radius: 8px;
+    color: #0A0A00;
+    width: 285px;
+    height: 62px;
+    font-weight: 800;
+}
+.botao-assinar-header:hover{
+    background-color: #F5F5F5;
+    border-color: #FFFF00;
+}
+
+.destaque{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 60px;
+    padding-left: 10%;
+}
+.destaque-letra{
+    font-family: 'Nova Round', system-ui;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 572.5px;
+    height: 267px;
+    gap: 20px;
+}
+h1, h2, h3, h5{
+    font-family: 'Nova Script', system-ui;
+}
+.botao-assinar-destaque{
+    background-color: #F5F5F5;
+    font-family: 'Open Sans', system-ui;
+    font-style: normal;
+    font-size: 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    width: 158px;
+    height: 64px;
+    color: #0A0A00;
+}
+.botao-assinar-destaque:hover{
+    background-color: black;
+    color: #F5F5F5;
+}
+
+.destaque-imagem{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 0px;
+    width: 572.5px;
+    height: 347px;
+}
+
+.destaque-imagem-um{
+    position: absolute;
+    width: 265px;
+    height: 347px;
+    border-radius: 36px;
+    z-index: 1;
+}
+
+.destaque-imagem-dois{
+    position: absolute;
+    width: 265px;
+    height: 266px;
+    left: 205px;
+    top: 40.28px;
+    border-radius: 36px;
+    z-index: -1;
+}
+.sobrenos{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 40px;
+    padding-left: 10%;
+
+}
+
+.sobrenos-container-um{
+    width: 572.5px;
+    height: 393px;
+
+}
+
+.sobrenos-imagem{
+    border-radius: 36px;
+}
+.sobrenos-texto{
+    font-family: 'Nova Round', system-ui;
+    padding: 100px;
+    color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.modalidades{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding-top: 110px;
+    padding-left: 10%;
+    justify-content: flex-start;
+}
+
+.modalidades-imagem{
+    width: 572.5px;
+    height: 393px
+}
+.modalidades-imagem-4{
+    width: 427px;
+    height: 393px;
+}
+
+.modalidades-texto{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+    font-family: 'Nova Round',system-ui;
+}
+.assine{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 27%;
+    gap: 10px;
+}
+.campo-formulario-texto{
+    display: flex;
+    justify-content: center;
+    font-family: 'Nova Flat',system-ui;
+    font-size: 64px;
+}
+
+.campo-formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.campo-formulario input{
+    font-family: 'Nova Round', system-ui;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    border-radius: 8px;
+    height: 40px;
+    padding: 8px;
+}
+.campo-formulario-botao{
+        font-family: 'Open Sans', system-ui;
+        font-style: normal;
+        background-color:#FFFF00;
+        border-radius: 8px;
+        color: #0A0A00;
+        width: 60%;
+        height: 62px;
+        font-weight: 800;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.rodape-texto{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nova Round', system-ui;
+    color: #F5F5F5;
+    gap: 10px;
+}
+
+h5{
+    font-family: 'Nova Script', system-ui;
+    color: #F5F5F5;
+    font-size: 34px;
+}
+
+@media screen and (max-width: 768px) {
+    *{
+        box-sizing: content-box;
+    }
+    
+    body{
+        display: block;
+        position: absolute;
+    }
+
+    .imagem-fundo-1, .imagem-fundo-2, .imagem-fundo-3{
+        display: none;
+    }
+
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #FFFF00;
+        width: 100%;
+        padding: 0px;
+    }
+
+    .menu-toggle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      background-color: #FFFF00;
+        margin: 20px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .botao-assinar-header-container{
+        display: none;
+    }
+    .botao-assinar-header{
+        display: none;
+    }
+    .cabecalho-menu{
+        display: none;
+    }
+
+    .destaque{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 0%;
+        width:100%;
+    }
+    .destaque-letra{
+        width: 90%;
+        height: 100%;
+        color: #F5F5F5;
+        gap: 34px;
+        padding: 10px;
+        font-size: 12px;
+    }
+    .destaque-imagem{
+        width: 350px;
+        height: 360px;
+        align-items: center;
+        padding: 10px;
+
+    }
+    .destaque-imagem-um{
+        width: 200px;
+        height: auto;
+    }
+    .destaque-imagem-dois{
+        width: 150px;
+        height: 150px;
+        top: auto;
+    }
+    .botao-assinar-destaque{
+        background-color: #FFFF00;
+        width: 100%;
+        height: 100px;
+    }
+
+    .sobrenos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+        width: 100%;
+    }
+    .sobrenos-container-um{
+        width:90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .sobrenos-imagem{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+    }
+    .sobrenos-texto{
+        width: 350px;
+        padding: 10px;
+    }
+
+    .modalidades{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        padding-left: 0%;
+        align-items: center;
+    }
+    .modalidades-imagem{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .modalidades-imagem-4{
+        width: 300px;
+        height: 300px;
+    }
+    .modalidades-texto{
+        color: #F5F5F5;
+        padding: 20px;
+        font-size: 12px;
+    }
+    
+    .assine{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        align-items:center;
+        margin-top: 30px;
+
+    }
+    .campo-formulario-texto{
+        color: #F5F5F5;
+        align-items: center;
+        justify-content: center;
+    }
+    .campo-formulario input{
+        width: 300px;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .campo-formulario-botao{
+        width: 100%;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height:100%;
+        margin-top: 30px;
+        
+    }
+
+    .rodape-imagem{
+        width: 300px;
+    }
+    .rodape-texto{
+        width: 90%;
+        height: 100%;
+        gap: 20px;
+    }
+    
+    
+
+    
+}
+
+
+
+
+
