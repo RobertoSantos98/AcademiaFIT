@@ -21,11 +21,13 @@
         </button>
     </div>
         <div class="cabecalho-menu">
-            <nav class="cabecalho-menu-lista">
-                <li><a class="cabecalho-menu-item" href="*">Home</a></li>
-                <li><a class="cabecalho-menu-item" href="*">Sobre nós</a></li>
-                <li><a class="cabecalho-menu-item" href="*">Modalidades</a></li>
-                <li><a class="cabecalho-menu-item" href="*">Contatos</a></li>
+            <nav>
+                <ul class="cabecalho-menu-lista">
+                    <li><a class="cabecalho-menu-item" href="*">Home</a></li>
+                    <li><a class="cabecalho-menu-item" href="*">Sobre nós</a></li>
+                    <li><a class="cabecalho-menu-item" href="*">Modalidades</a></li>
+                    <li><a class="cabecalho-menu-item" href="*">Contatos</a></li>
+                </ul>
             </nav>
         </div>
         <div class="botao-assinar-header-container">
@@ -112,7 +114,44 @@
 
     </footer>
 
-    <script src=js.js"></script>
+    <script>
+    class MobileNavBar{
+    constructor(menuToggle, navList, navLinks){
+        this.mobileMenu = document.querySelector(menuToggle);
+        this.navList = document.querySelector(navList);
+        this.navLinks = document.querySelectorAll(navLinks);
+        this.activeClass = 'active';
+
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    handleClick(){
+        console.log(this);
+        this.navList.classList.toggle(this.activeClass);
+
+    }
+
+    addClickEvent(){
+        this.mobileMenu.addEventListener("click", this.handleClick);
+    }
+
+    Init(){
+        if(this.mobileMenu){
+            this.addClickEvent();
+        }
+        return this;
+    }
+}
+
+const mobileNavBar = new MobileNavBar(
+    ".botao-menu",
+    ".cabecalho-menu",
+    ".cabecalho-menu li"
+);
+
+mobileNavBar.Init();
+
+    </script>
     
 </body>
 </html>
