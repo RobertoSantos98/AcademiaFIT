@@ -13,10 +13,8 @@ body{
 }
 .imagem-fundo-1{
     position: absolute;
-    width: 1200px;
-    height: 990px;
-    left: -275px;
-    top: -283px;
+    width: 65%;
+    height: 21%;
     z-index: -1;
 }
 .imagem-fundo-2{
